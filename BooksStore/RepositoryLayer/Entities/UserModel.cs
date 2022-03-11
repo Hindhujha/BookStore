@@ -6,9 +6,7 @@ namespace CommonLayer
 {
     public class UserModel
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [Required]
+
         public int UserId { get; set; }
         public string FullName { get; set; }
 

@@ -8,9 +8,7 @@ namespace RepositoryLayer.PostModel
 {
     public class BookModel
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [Required]
+        
         public int BookId { get; set; }
         public string BookName { get; set; }
         public string AuthorName { get; set; }

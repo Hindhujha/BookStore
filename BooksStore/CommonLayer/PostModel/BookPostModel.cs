@@ -16,7 +16,8 @@ namespace CommonLayer.PostModel
         public string BookDescription { get; set; }
         public float Rating { get; set; }
         public int Reviewer { get; set; }
-        public int BookCount { get; set; }
         public string Image { get; set; }
+        public int BookCount { get; set; }
+       
     }
 }

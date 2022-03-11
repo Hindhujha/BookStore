@@ -215,7 +215,7 @@ namespace RepositoryLayer.Services
                             data.BookDescription = fetch["BookDescription"].ToString();
                             data.Rating = Convert.ToInt32(fetch["Rating"]);
                             data.Reviewer = Convert.ToInt32(fetch["Reviewer"]);
-
+                            data.Image = fetch["Image"].ToString();
                             data.BookCount = Convert.ToInt32(fetch["BookCount"]);
                             book.Add(data);
                         }
