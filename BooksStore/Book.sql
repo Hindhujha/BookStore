@@ -68,3 +68,7 @@ create table Books(
   select * from Books where BookId=@BookId
   End
   
+
+  ALTER TABLE Books
+Add foreign key (userId) references UserRegister (userId)
+GO
