@@ -146,7 +146,6 @@ namespace RepositoryLayer.Services
                             BookPostModel bookModel = new BookPostModel();
                             model.userId= Convert.ToInt32(fetch["userId"]);
                              model.CartID = Convert.ToInt32(fetch["CartID"]);
-                           // bookModel.BookId= Convert.ToInt32(fetch["BookID"]);
                             bookModel.BookName = fetch["BookName"].ToString();
                             bookModel.AuthorName = fetch["AuthorName"].ToString();
                             bookModel.DiscountPrice = Convert.ToInt32(fetch["DiscountPrice"]);
@@ -155,9 +154,8 @@ namespace RepositoryLayer.Services
                             bookModel.Rating = Convert.ToInt32(fetch["Rating"]);
                             bookModel.Reviewer = Convert.ToInt32(fetch["Reviewer"]);
                             bookModel.Image = fetch["Image"].ToString();
-                            bookModel.BookCount = Convert.ToInt32(fetch["BookCount"]);
-                             //model.CartId = Convert.ToInt32(fetch["userId"]);
-                             model.BookId = Convert.ToInt32(fetch["BookId"]);
+                            bookModel.BookCount = Convert.ToInt32(fetch["BookCount"]);                         
+                            model.BookId = Convert.ToInt32(fetch["BookId"]);
                             model.Quantity = Convert.ToInt32(fetch["Quantity"]);
                             model.bookModel =bookModel;
                             cart.Add(model);
