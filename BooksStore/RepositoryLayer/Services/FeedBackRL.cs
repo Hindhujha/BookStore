@@ -72,24 +72,13 @@ namespace RepositoryLayer.Services
                     {
                         while (fetch.Read())
                         {
-                            FeedBackModel model = new FeedBackModel();
-                           // BookPostModel bookModel = new BookPostModel();
+                            FeedBackModel model = new FeedBackModel();                        
                             model.FeedbackId = Convert.ToInt32(fetch["FeedbackId"]);
                             model.userId = Convert.ToInt32(fetch["userId"]);
-                            model.BookId= Convert.ToInt32(fetch["BookId"]);
-                            //bookModel.BookName = fetch["BookName"].ToString();
-                            //bookModel.AuthorName = fetch["AuthorName"].ToString();
-                            //bookModel.DiscountPrice = Convert.ToInt32(fetch["DiscountPrice"]);
-                            //bookModel.OriginalPrice = Convert.ToInt32(fetch["OriginalPrice"]);
-                            //bookModel.BookDescription = fetch["BookDescription"].ToString();
-                            //bookModel.Rating = Convert.ToInt32(fetch["Rating"]);
-                            //bookModel.Reviewer = Convert.ToInt32(fetch["Reviewer"]);
-                            //bookModel.Image = fetch["Image"].ToString();
-                            //bookModel.BookCount = Convert.ToInt32(fetch["BookCount"]);                          
+                            model.BookId= Convert.ToInt32(fetch["BookId"]);                                             
                             model.FeedBackFromUserName = fetch["FeedBackFromUserName"].ToString();
                             model.Comments = fetch["Comments"].ToString();
-                            model.Ratings= Convert.ToInt32(fetch["Ratings"]);
-                            //model.bookModel = bookModel;
+                            model.Ratings= Convert.ToInt32(fetch["Ratings"]);                         
                             order.Add(model);
 
                         }

@@ -2,9 +2,6 @@
 using CommonLayer.PostModel;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace BookStore.Controllers
 {
@@ -44,7 +41,7 @@ namespace BookStore.Controllers
 
         [HttpGet("getallFeedBacks/{BookId}")]
         public IActionResult GetAllFeedBacks(int BookId)
-        {
+        {  
             try
             {
                 var result = this.feedBackBL.GetAllFeedBacks(BookId);

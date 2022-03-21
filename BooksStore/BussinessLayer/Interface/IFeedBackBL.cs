@@ -7,9 +7,9 @@ using System.Text;
 namespace BussinessLayer.Interface
 {
    public  interface IFeedBackBL
-    {
+   {
         string AddFeedBack(FeedBackPostModel feedBackPost);
 
         List<FeedBackModel> GetAllFeedBacks(int BookId);
-    }
+   }
 }

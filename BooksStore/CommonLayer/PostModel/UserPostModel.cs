@@ -7,8 +7,7 @@ namespace CommonLayer.PostModel
 {
    public class UserPostModel
     {
-       
-       
+            
         public string FullName { get; set; }
 
        

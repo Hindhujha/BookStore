@@ -10,8 +10,20 @@ namespace BussinessLayer.Interface
     {
         string AddAdmin(AdminPostModel adminPost);
 
+        string Adminlogin(string MailId, string Password);
+
+        string AdminsBook(AdminsBookPostModel adminBookPost);
+
         bool UpdateAdmin(int AdminId, AdminPostModel adminPost);
 
+        bool UpdateAdminsBook(int AdminsBookId, AdminsBookPostModel adminBook);
+
+        bool DeleteAdminsBook(int AdminsBookId);
+
         List<AdminModel> GetAdminDetails();
+
+        List<AdminsBookModel> GetAdminsBooks();
+
+
     }
 }

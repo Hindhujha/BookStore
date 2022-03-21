@@ -35,3 +35,5 @@ select * from BookCart
 select * from Address
 
 select * from FeedBack
+
+select * from Admin
